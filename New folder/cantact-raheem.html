@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: auto;
+        }
+        #main{
+            height: 400px;
+            width: 800px;
+        }
+        #map{
+            height: 300px;
+            width: 800px;
+            background-color: darkkhaki;
+        }
+        #details{
+            height: 500px;
+            width: 800px;
+            float: left;
+            background-color: cadetblue;
+        }
+        
+        
+        .add{
+            height: 480px;
+            width: 320px;
+            color: chartreuse;
+            background-color: rgba(137, 43, 226, 0.543);
+            padding: 10px;
+            float: left;
+        }
+        .frm{
+            height: 500px;
+            width: 450px;
+            background-color: rgba(137, 43, 226, 0.543);
+            color: chartreuse;
+            float: right;
+        }
+        .form{
+            justify-content: center;
+            display: flex;
+            padding: 10px;
+        } 
+        input[type="text"]
+        {
+            height: 30px;
+            width: 250px;
+            margin: 5px 0px;
+        }
+        .name{
+            background-image: url('images/user.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+        }
+        .phone{
+            background-image: url('images/phone.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+        }
+        .email{
+            background-image: url('images/email (2).png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position:left;
+        }
+        .mobile{
+            background-image: url('images/mobile.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position:left;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7587.732836439165!2d77.2009327098194!3d18.03140195542555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcee17e8e4c2385%3A0x16a9c5226fe97b72!2sPost%20metric%20minority%20boys%20hostel%20(mpmbh)%20bhalki!5e0!3m2!1sen!2sin!4v1692771673164!5m2!1sen!2sin" 
+            width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="details">
+            <div class="add">
+                Post metric minority boys hostel (mpmbh) bhalki
+                26J3+HQ, Bhalki, Karnataka 585328
+                <br><br> <h4 class="mobile"style="padding-left: 20px;text-align:left;font-size: smaller;">+91 9478594323</h4><br>
+                <h5  class="email"style="padding-left:  20px;text-align:left;font-size: smaller;">  mpmbh123@gmail.com</h5>
+            </div>
+
+                <div class="frm">
+                    <div class="form">
+                <form action="" >
+                    <h1>Get In Touch</h1>
+                 <label for="username">Your Name:</label><br>
+                 <input type="text" class="name" id="uname" required name="uname"  placeholder="Your Name">
+                <br>
+                <label for="phonenumber">Phone Number:</label><br>
+                <input type="text" class="phone" id="pnum" required name="pnum" placeholder="Phone Number">
+                <br>
+              
+                <label for="Email">Email:</label><br>
+                <input type="text"class="email" id="Email" required name="Email" placeholder="Email">
+                <br>
+                <label for="Message">Message:</label><br>
+                <textarea rows="4" cols="36" required class="message"></textarea>
+                <br>
+                <input type="submit" value="SEND" class="send" style="color: chocolate;background-color: aqua;">
+                </div>
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>

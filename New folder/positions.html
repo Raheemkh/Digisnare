@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions Example</title>
+    <style>
+#fixed{
+    height: 200px;
+    width: 50px;
+    background-color: red;
+    position: fixed;
+   left:0px;
+  top:50%;
+  margin-top: -100px;
+}
+#absolute{
+    height: 200px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+right:0px;
+  top:50%;
+  margin-top: -100px;
+}
+#relative{
+    height: 500px;
+    width: 400px;
+ border:solid 1px red;
+ margin: auto;
+ position: relative;
+}
+#prev{
+    height: 50px;
+    width: 50px;
+    border: solid 1px red;
+    position: absolute;
+    top:50%;
+    left:10px;
+    margin-top: -25px;
+}
+    </style>
+</head>
+<body>
+    <div id="fixed"></div>
+    <div id="absolute"></div>
+    <div id="relative">
+        <div id="prev"></div>
+        <div id="next"></div>
+    </div>
+</body>
+</html>

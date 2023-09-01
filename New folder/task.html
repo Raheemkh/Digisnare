@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        #main
+        {
+            background-color: white;
+            height: 800px;
+            width: 900px;
+            margin: auto;
+            padding: 100px;
+        }
+        #add{
+            height: 400px;
+            width: 300px;
+            background-color: aqua;
+            float: left;
+            text-align: justify;
+            padding: 10px;
+        }
+        #details{
+            height:420px ;
+            width: 580px;
+            background-color: antiquewhite;
+            float: right;
+        }
+        .form{
+            height: auto;
+            width: auto;
+            padding: 20px;
+        }
+        input[type="text"]
+        {
+            height: 30px;
+            width: 450px;
+            margin: 5px 0px;
+        }
+        .name{
+            background-image: url('images/user.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position:left;
+        }
+        .phone{
+            background-image: url('images/phone.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: leftt;
+        }
+        .email{
+            background-image: url('images/email (2).png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+        }
+        .send{
+            background-image: url('images/send.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+        }
+        .mobile{
+            background-image: url(images/mobile.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+        }
+        .subject{
+            background-image: url(images/subject.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="add">
+            <h1 style="padding: 20px; center;font-weight: bold;">Get In Touch</h1>
+            <h2 style="padding-left: 20px;text-align: left;font-size: smaller;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                since the 1500s, when an</h2>
+            <h3 style="padding-left:  20px;text-align:left;font-size: smaller;">Digisnare Technologies<br>
+                First Floor, Keonics IT Park, LIG-2, Akkamahadevi Colony, Kalaburagi, Karnataka 585103</h3>
+            <h4 class="mobile"style="padding-left: 20px;text-align:left;font-size: smaller;">+91 9113540419</h4>
+            <h5  class="email"style="padding-left:  20px;text-align:left;font-size: smaller;">digisnare@gmail.com</h5>
+            </div>
+        <div id="details">
+            <div class="form">
+                <form action="" >
+                
+                <input type="text" class="name" id="uname" required name="uname"  placeholder="Enter Full Name">
+                <br><br>
+                
+                <input type="text" class="phone" id="pnum" required name="pnum" placeholder="Enter Mobile Number">
+                <br><br>
+                <input type="text" class="email" id="email" required name="emai" placeholder="Enter Email Address">
+                
+                <input type="text"class="subject" id="subject" required name="subject" placeholder="Enter Subject">
+                <br><br>
+                
+                <textarea rows="5" cols="60" required class="message" placeholder="Enter Message"></textarea>
+                <br><br>
+                
+                <input type="submit" value="SEND" class="send" style="color: cornflowerblue;">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

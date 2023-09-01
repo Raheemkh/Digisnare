@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of css selector</title>
+    <style>
+        h1  /* tagwise selector */
+        {
+            color: red;
+            background-color: yellow;
+        }
+        #box  /* id selector */
+        {
+            height: 200px;
+            width:300px;
+            background-color: rgb(31, 31, 10);
+            color:red;
+         }
+         .box1 /* class selector */
+        {
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+        }
+        
+         p,.abc,h3 /* group selector */
+         {
+text-align: center;
+         }
+         * /* universal selector */
+         {
+            text-decoration: underline;
+         }
+    </style>
+</head>
+<body>
+    <h1 class="abc"> i am a tagwise selector</h1>
+    <div id="box">Welcome</div>
+    <div class="box1">Welcome</div>
+    <p>welcome</p>
+    <h3>welcome</h3>
+</body>
+</html>

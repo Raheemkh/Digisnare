@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas </title>
+    <style>
+        canvas{
+            border: solid 1px blue;
+        }
+ 
+    </style>
+</head>
+<body>
+    <p> default Canvas 300*150  </p>
+    <canvas></canvas>
+    <p>rect canvas</p>
+    <canvas id="rect"></canvas>
+    <script>
+        a=document.getElementById("rect");
+        b=a.getContext("2d");
+        b.rect(100,25,100,100); //x,y,w,h
+        b.fillStyle="blue";
+        b.fill();
+       b.beginPath();
+        b=a.getContext("2d");
+        b.rect(80,45,100,100); //x,y,w,h
+        b.fillStyle="red";
+        b.globalAlpha=0.5;
+        b.fill();
+        b.beginPath();
+        b=a.getContext("2d");
+        b.rect(120,15,100,100); //x,y,w,h
+        b.fillStyle="green";
+        b.globalAlpha=0.5;
+        b.fill();
+</script>
+<p>circle Scanvas</p>
+<canvas id="circle"></canvas>
+<script>
+    a=document.getElementById("circle");//reference id
+    b=a.getContext("2d");//two dimention
+    b.arc(150,50,30,0,2*3.14); //cx,cy,radius,origin,2*pi
+    b.fillStyle="blue";//fill backgound
+    b.fill();//intialization
+    b=a.getContext("2d");//two dimention
+    b.arc(50,90,30,0,2*3.14); //cx,cy,radius,origin,2*pi
+    b.fillStyle="red";//fill backgound
+    b.fill();//intialization
+    b=a.getContext("2d");//two dimention
+    b.arc(250,10,30,0,2*3.14); //cx,cy,radius,origin,2*pi
+    b.fillStyle="red";//fill backgound
+    b.fill();//intialization
+    </script>
+    <p>line canvas</p>
+    <canvas id="line"></canvas>
+    <script>
+        a=document.getElementById("line");//reference id
+        b=a.getContext("2d");//two dimention
+        b.moveTo(149,0); //cx,cy,radius,origin,2*pi
+        b.lineTo(150,150);
+        b.stroke();
+        b.beginPath();
+        b.moveTo(0,75); //cx,cy,radius,origin,2*pi
+        b.lineTo(300,75);
+        b.stroke();
+
+        b.moveTo(300,0); //cx,cy,radius,origin,2*pi
+        b.lineTo(0,150);
+        b.stroke();
+
+        b.moveTo(0,0); //cx,cy,radius,origin,2*pi
+        b.lineTo(300,150);
+        b.stroke();
+        </script>
+</body>
+</html>

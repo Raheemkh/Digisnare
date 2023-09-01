@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position types</title>
+    <style>
+        #fixed{
+            height: 200px;
+            width: 50px;
+            background-color: rgb(255, 0, 128) ;
+            top:50%;
+            left: 0%;
+            position: fixed;
+            margin-top: -100px;
+        }
+        #absolute{
+            height: 200px;
+            width: 50px;
+            background-color: rgb(255, 0, 128) ;
+            top:50%;
+            right: 0%;
+            position: absolute;
+            margin-top: -100px;
+        }
+        #relative{
+            height: 600px;
+            width: 500px;
+            border: solid 1px chocolate;
+           position: relative;
+           margin: auto;
+        }
+        .prev{
+            height: 50px;
+            width: 50px;
+            border: solid red;
+            position: absolute;
+            left:8%;
+            top: 50%;
+            margin-top:  -25px;
+        }
+        .next{
+            height: 50px;
+            width: 50px;
+            border: solid red;
+            position: absolute;
+            right:8%;
+            top: 50%;
+           margin-top: -25px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="fixed"></div>
+       <div id="absolute"></div>
+           <div id="relative">
+                <div class="prev">PREV</div>
+                <div class="next">NEXT</div>
+            </div>
+    
+</body>
+</html>
