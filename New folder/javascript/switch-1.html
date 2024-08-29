@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day</title>
+</head>
+<body>
+    <script>
+        d=new Date();
+        day=d.getDay();
+        document.write("Today is:")
+        switch(day)
+        {
+            case 0: document.write(" sunday");
+            break;
+            case 1: document.write(" monday");
+            break;
+            case 2: document.write("Today is :tuesday");
+            break;
+            case 3: document.write("Today is wednessday");
+            break;
+            case 4: document.write("Today is : thursday");
+            break;
+            case 5: document.write(" :satday");
+            break;
+            case 6: document.write("Today is satarday");
+            break;
+        }
+    </script>
+   
+         <button onclick="document.getElementById('date').innerHTML=Date()">Open loop decrement</button>
+    <p id="date"></p>
+    <script></script>
+    
+</body>
+</html>

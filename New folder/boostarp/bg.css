@@ -1,0 +1,12 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.bg{
+    background-image: url("image/forest.jpg");
+    height: 800px;
+    width: 800px;
+    background-repeat: no-repeat;
+    
+}

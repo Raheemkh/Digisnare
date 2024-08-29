@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <label>Name</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label>Email</label><br>
+    <input type="text" name="email" id="email"><br>
+    <label>Contact No</label><br>
+    <input type="text" name="contactno" id="contactno"><br>
+    <label>Message</label><br>
+    <input type="text" name="contactno" id="contactno"><br>
+    <input type="button" value="submit" onclick="validate()">
+
+    <script>
+        function validate()
+        {
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var contactno=document.getElementById("contactno").value;
+if(name=="")
+{
+    alert("Please Enter Name");
+    document.getElementById("name").focus();
+}
+else if(email=="")
+{
+    alert("Please Enter emailid");
+    document.getElementById("email").focus();
+}
+else if(contactno=="")
+{
+    alert("Please Enter contactno");
+    document.getElementById("contactno").focus();
+}
+else
+{
+    document.getElementById("nameval").innerHTML=name;
+    document.getElementById("emailval").innerHTML=email;
+    document.getElementById("contactnoval").innerHTML=contactno;
+}
+        }
+    </script>
+    <p id="nameval"></p>
+    <p id="emailval"></p>
+    <p id="contactnoval"></p>
+</body>
+</html>

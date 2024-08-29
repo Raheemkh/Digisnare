@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+        <label>Name</label><br>
+        <input type="text" id="name" name="name"><br>
+            <label>Email</label><br>
+            <input type="text" id="email" name="email"><br>
+                <label>phone</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                    <label>Message</label><br>
+                    <input type="text" id="message" name="message"><br><br>
+                    <input type="button" value="submit" onclick="validate()"><br>
+            <script>
+                function validate(){
+                   var name=document.getElementById("name").value;
+                   var email=document.getElementById("email").value;
+                   var phone=document.getElementById("phone").value;
+                   var message=document.getElementById("message").value;
+                   if(name=="")
+                   {
+                    alert("please enter name")
+                    document.getElementById("name").focus()
+                } 
+                else if(email=="")
+                {
+                    alert("please enter email")
+                    document.getElementById("email").focus() 
+                }
+                else if(phone=="")
+                {
+                    alert("please enter phone")
+                    document.getElementById("phone").focus() 
+                }
+                else if(message=="")
+                {
+                    alert("please enter message")
+                    document.getElementById("message").focus() 
+                }
+                else{
+                    document.getElementById("nameval").innerHTML=name;
+                    document.getElementById("emailval").innerHTML=email;
+                    document.getElementById("phoneval").innerHTML=phone;
+                    document.getElementById("messageval").innerHTML=message;
+                }
+}
+    </script>
+    <p id="nameval"></p>
+    <p id="emailval"></p>
+    <p id="phoneval"></p>
+    <p id="messageval"></p>
+</body>
+</html>

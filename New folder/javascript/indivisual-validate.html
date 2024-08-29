@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digit</title>
+</head>
+<body>
+ <label>Name*</label><br>
+        <input type="text" onkeypress="return alphabate()">
+        <script>
+            function alphabate(){
+                a=event.which;
+                range=(a>=65 && a<=122);
+                if(range==false)
+                {
+                    alert("please insert only alphabate ");
+                }
+                return  range;
+            }
+        </script>
+        <script></script>
+        <br>
+        <label>phone*</label><br>
+        <input type="text" onkeypress="return digit()">
+        <script>
+            function digit(){
+                a=event.which;
+                range=(a>=47 && a<=57);
+                if(range==false)
+                {
+                    alert("please insert only digit ");
+                }
+                return  range;
+            }
+        </script>
+</body>
+</html>

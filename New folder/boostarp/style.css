@@ -1,0 +1,23 @@
+.header{
+    background-color: rgb(216, 147, 19);
+}
+.nav-item{
+    padding-left: 20px;
+    color: rgb(59, 97, 97);
+}
+.navbar-brand{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+}
+.text-center{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#button{
+    background-color: rgba(35, 83, 215, 0.491);
+    border: 1px;
+}
+.box{
+    border-radius: 5%;
+    box-shadow: 4px 4px 4px 4px;
+}
+

@@ -1,0 +1,15 @@
+<p>textbox to accept only digit</p>
+<input type="text" onkeypress="return digit()">
+<script>
+    function digit(){
+        a=event.which; //convert value to ASCII
+       // alert(a);
+       range=(a>=48 && a<=57);
+      if(range==false)
+      {
+        alert("Please enter only digit");
+      }
+       return range;
+     
+    }
+</script>

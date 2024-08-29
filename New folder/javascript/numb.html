@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 400px;
+            background-color: aqua;
+            margin: auto;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <label >Enter Number:</label><br>
+        <input type="text" id="num"><br>
+        <input type="button" value="submit" onclick="tt()">
+    </div>
+        <script>
+            function tt(){
+                a=document.getElementById("num").value;
+                n=Number( a);
+                document.getElementById("tofixed").innerHTML=n.toFixed(2);
+                document.getElementById("tofixed4").innerHTML=n.toFixed(4);
+                document.getElementById("toexponential").innerHTML=n.toExponential(2);
+                document.getElementById("toexponential4").innerHTML=n.toExponential(4);
+                document.getElementById("pow").innerHTML=Math.pow(n,2);
+                document.getElementById("sqrt").innerHTML=Math.sqrt(n);
+               
+            }
+        </script>
+        <table border="1">
+            <tr><td>tofixed(2)</td><td id="tofixed"></td></tr>
+            <tr><td>tofixed(4)</td><td id="tofixed4"></td></tr>
+            <tr><td>toexponential(2)</td><td id="toexponential"></td></tr>
+            <tr><td>toexponential(4)</td><td id="toexponential4"></td></tr>
+            <tr><td>pow</td><td id="pow"></td></tr>
+            <tr><td>sqrt</td><td id="sqrt"></td></tr>
+            
+        </table>
+    
+</body>
+</html>

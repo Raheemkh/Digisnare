@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+   <p>while loop</p>
+    <script>
+        z=1;   
+        while(z<10)
+        {
+            document.write(z++);
+        }
+        </script>
+        <p>dowhile loop</p>
+        <script>
+         z=1;   
+        do
+        {
+            document.write(z++);
+        }
+        while(z<=10)
+    </script>
+    <p>for loop</p>
+        <script>
+            
+        for(z=0;z<=10;z++)
+        {
+            if(z===8)continue;
+            document.write(z);
+        }
+    </script>
+   
+    <script>
+        
+    for(z=10;z>=0;z--)
+    {
+        if(z===5)break;
+        document.write(z);
+    }
+</script>
+</body>
+</html>

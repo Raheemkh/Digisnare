@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 900px;
+            background-color: rgba(236, 255, 127, 0);
+            text-align: center;
+            font-size: 30px;
+            color: rgba(236, 255, 127, 0);
+            line-height: 200px;
+            border-radius: 20px;
+        }
+        #box:hover{
+            box-shadow: 10px  10px 10px red;
+            text-shadow: 10px 10px 10px rgb(106, 0, 255);
+            animation-iteration-count: 3;
+            animation-duration: 3s;
+            animation-name: digisnare;
+            color: rgba(255, 255, 0, 0);
+        }
+        @keyframes digisnare {
+            from{ background:blue; }
+            to {background: red; color: yellow;}
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            float: left;
+            text-align: center;
+            border: solid 1px ;
+            background-color: black;
+            color: white;
+        }
+        #rotate:hover{
+            transition: 1s;
+            transform: rotate(360deg);
+        }
+
+        #scale:hover{
+         transition: 3s;
+            transform: scale(2,2);
+        }
+        #translate:hover{
+         transition: 3s;
+            transform: translate(30px,30px);
+        }
+        #skew:hover{
+         transition: 3s;
+            transform: skew(30deg,30deg);
+        }
+        .rgba{ height: 200px;
+            width: 200px;
+            float: left;
+            text-align: center;
+            border: solid 1px ;
+            background-color: black;
+            color: white;
+            background-color: rgba(245, 40, 145, 0.8);
+
+        }
+        .rgba{ height: 200px;
+            width: 200px;
+            float: left;
+            text-align: center;
+            border: solid 1px ;
+            background-color: black;
+            color: white;
+            background-color: rgba(245, 40, 145, 0.8);
+            font-family: 'Bebas Neue', sans-serif;
+         }
+         .lgradient{ height: 200px;
+            width: 200px;
+            float: left;
+            text-align: center;
+            border: solid 1px ;
+            background: linear-gradient(
+    90deg,
+    rgb(225, 35, 35) 12%,
+    rgb(248, 245, 245) 56%,
+    rgb(65, 215, 62) 97%
+  );
+         }
+         .rgradient{ height: 200px;
+            width: 200px;
+            float: left;
+            text-align: center;
+            border: solid 1px ;
+            background: radial-gradient(
+    100% 100% at 50% 50%,
+    rgb(55, 25, 19) 12%,
+    rgba(237, 237, 237, 0.905) 85%,
+    rgb(146, 238, 93) 97%
+  );
+         }
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="box"> Welcome To Digisnare Technologies</div>
+    <div class="main">rotate
+        <img src="images/cat.jpg"  width="200" height="180" id="rotate"> 
+    </div>
+        
+    <div class="main">scale
+        <img src="images/cat.jpg"  width="200" height="180" id="scale">
+    </div>
+    <div class="main">translate
+        <img src="images/cat.jpg"  width="200" height="180" id="translate">
+    </div>
+    <div class="main">skew
+        <img src="images/cat.jpg"  width="200" height="180" id="skew">
+    </div>
+    <div class="rgba">rgba</div>
+    <div class="rgba">eternal font</div>
+    <div class="lgradient">linear gradient</div>
+    <div class="rgradient"> gradial gradient</div>
+</body>
+</html>
